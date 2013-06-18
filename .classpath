@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/robin/Documents/workspace/smoke-test/lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="/Users/robin/Documents/workspace/smoke-test/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/robin/Documents/workspace/smoke-test/lib/commons-exec-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/robin/Documents/workspace/smoke-test/lib/commons-io-2.2.jar"/>
+	<classpathentry kind="lib" path="/Users/robin/Documents/workspace/smoke-test/lib/commons-jxpath-1.3.jar"/>
+	<classpathentry kind="lib" path="/Users/robin/Documents/workspace/smoke-test/lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="/Users/robin/Documents/workspace/smoke-test/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/robin/Documents/workspace/smoke-test/lib/cssparser-0.9.8.jar"/>
+	<classpathentry kind="lib" path="/Users/robin/Documents/workspace/smoke-test/lib/guava-14.0.jar"/>
+	<classpathentry kind="lib" path="/Users/robin/Documents/workspace/smoke-test/lib/httpclient-4.2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/robin/Documents/workspace/smoke-test/lib/httpcore-4.2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/robin/Documents/workspace/smoke-test/lib/json-20080701.jar"/>
+	<classpathentry kind="lib" path="/Users/robin/Documents/workspace/smoke-test/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/Users/robin/Documents/workspace/smoke-test/lib/phantomjsdriver-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/robin/Documents/workspace/smoke-test/lib/selenium-java-2.31.0.jar"/>
+	<classpathentry kind="lib" path="/Users/robin/Documents/workspace/smoke-test/lib/testng-6.8.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
