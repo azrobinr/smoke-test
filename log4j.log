@@ -1,0 +1,272 @@
+[2013-06-19 11:05:50,168] INFO     0[main] - com.contatta.smoke.StatusUpdate.setUp(StatusUpdate.java:48) - FireFox driver selected
+[2013-06-19 11:05:57,692] INFO  7524[main] - com.contatta.smoke.StatusUpdate.setUp(StatusUpdate.java:55) - target property returned as Moose
+[2013-06-19 11:06:02,183] INFO 12015[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending robin@contatta.com	 to .login-form .login-field[name='username']
+[2013-06-19 11:06:05,275] INFO 15107[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending $yntellecT to .login-form .login-field[name='password']
+[2013-06-19 11:06:08,335] INFO 18167[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .login-form-container .form-login
+[2013-06-19 11:06:14,452] INFO 24284[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta
+[2013-06-19 11:06:14,462] INFO 24294[main] - com.contatta.smoke.StatusUpdate.setUp(StatusUpdate.java:67) - Contatta
+[2013-06-19 11:06:14,463] INFO 24295[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .quick-menu-secondary-item[data-command='noteAdd']
+[2013-06-19 11:06:17,647] INFO 27479[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending just some text for a note to .add-note-content .textarea-field-input
+[2013-06-19 11:06:20,704] INFO 30536[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .add-note-header .edit-save
+[2013-06-19 11:06:23,779] INFO 33611[main] - com.contatta.smoke.StatusUpdate.tearDown(StatusUpdate.java:81) - I think we're done...........
+[2013-06-19 11:14:22,591] INFO     0[main] - com.contatta.smoke.StatusUpdate.setUp(StatusUpdate.java:48) - FireFox driver selected
+[2013-06-19 11:14:29,857] INFO  7266[main] - com.contatta.smoke.StatusUpdate.setUp(StatusUpdate.java:55) - target property returned as Moose
+[2013-06-19 11:14:34,259] INFO 11668[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending robin@contatta.com	 to .login-form .login-field[name='username']
+[2013-06-19 11:14:37,350] INFO 14759[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending $yntellecT to .login-form .login-field[name='password']
+[2013-06-19 11:14:40,389] INFO 17798[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .login-form-container .form-login
+[2013-06-19 11:14:46,829] INFO 24238[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta
+[2013-06-19 11:14:46,839] INFO 24248[main] - com.contatta.smoke.StatusUpdate.setUp(StatusUpdate.java:67) - Contatta
+[2013-06-19 11:14:46,840] INFO 24249[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .quick-menu-secondary-item[data-command='noteAdd']
+[2013-06-19 11:14:50,019] INFO 27428[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending just some text for a note to .add-note-content .textarea-field-input
+[2013-06-19 11:14:53,078] INFO 30487[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .add-note-header .edit-save
+[2013-06-19 11:14:56,153] INFO 33562[main] - com.contatta.smoke.StatusUpdate.tearDown(StatusUpdate.java:81) - I think we're done...........
+[2013-06-19 11:28:34,610] INFO     0[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:49) - FireFox driver selected
+[2013-06-19 11:28:41,809] INFO  7199[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:56) - target property returned as Moose
+[2013-06-19 11:28:46,278] INFO 11668[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending robin@contatta.com	 to .login-form .login-field[name='username']
+[2013-06-19 11:28:49,370] INFO 14760[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending $yntellecT to .login-form .login-field[name='password']
+[2013-06-19 11:28:52,408] INFO 17798[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .login-form-container .form-login
+[2013-06-19 11:28:59,252] INFO 24642[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta
+[2013-06-19 11:28:59,265] INFO 24655[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:68) - Contatta
+[2013-06-19 11:28:59,265] INFO 24655[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-primary .icon-contatta
+[2013-06-19 11:29:02,338] INFO 27728[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-quick-item[data-command='mail']
+[2013-06-19 11:29:05,664] INFO 31054[main] - com.contatta.smoke.QuickActions.run(QuickActions.java:79) - Contatta : Compose Message
+[2013-06-19 11:29:05,664] INFO 31054[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .compose-message-header .button[data-action='cancelEntry']
+[2013-06-19 11:29:08,751] INFO 34141[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-primary .icon-contatta
+[2013-06-19 11:29:11,826] INFO 37216[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-quick-item[data-command='note']
+[2013-06-19 11:29:14,955] INFO 40345[main] - com.contatta.smoke.QuickActions.run(QuickActions.java:85) - Contatta : Status Update
+[2013-06-19 11:29:14,955] INFO 40345[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending a note from the quick action test to .add-note-content .textarea-field-input
+[2013-06-19 11:29:18,019] INFO 43409[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .add-note-header .edit-save
+[2013-06-19 11:29:21,093] INFO 46483[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-primary .icon-contatta
+[2013-06-19 11:29:24,168] INFO 49558[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-quick-item[data-command='user']
+[2013-06-19 11:29:27,382] INFO 52772[main] - com.contatta.smoke.QuickActions.run(QuickActions.java:93) - Contatta : New Contact
+[2013-06-19 11:29:27,382] INFO 52772[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .edit-cancel
+[2013-06-19 11:29:30,540] INFO 55930[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-primary .icon-contatta
+[2013-06-19 11:29:33,629] INFO 59019[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-quick-item[data-command='briefcase']
+[2013-06-19 11:29:36,802] INFO 62192[main] - com.contatta.smoke.QuickActions.run(QuickActions.java:99) - Contatta : Add Company
+[2013-06-19 11:29:36,803] INFO 62193[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .edit-cancel
+[2013-06-19 11:29:39,882] INFO 65272[main] - com.contatta.smoke.QuickActions.tearDown(QuickActions.java:106) - I think we're done...........
+[2013-06-19 11:34:45,853] INFO     0[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:49) - FireFox driver selected
+[2013-06-19 11:34:52,884] INFO  7031[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:56) - target property returned as Moose
+[2013-06-19 11:34:57,318] INFO 11465[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending robin@contatta.com	 to .login-form .login-field[name='username']
+[2013-06-19 11:35:00,408] INFO 14555[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending $yntellecT to .login-form .login-field[name='password']
+[2013-06-19 11:35:03,453] INFO 17600[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .login-form-container .form-login
+[2013-06-19 11:35:10,197] INFO 24344[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta
+[2013-06-19 11:35:10,209] INFO 24356[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:68) - Contatta
+[2013-06-19 11:35:10,210] INFO 24357[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-primary .icon-contatta
+[2013-06-19 11:35:13,287] INFO 27434[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-quick-item[data-command='mail']
+[2013-06-19 11:35:16,612] INFO 30759[main] - com.contatta.smoke.QuickActions.composeMessage(QuickActions.java:77) - Contatta : Compose Message
+[2013-06-19 11:35:16,613] INFO 30760[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .compose-message-header .button[data-action='cancelEntry']
+[2013-06-19 11:35:19,695] INFO 33842[main] - com.contatta.smoke.QuickActions.tearDown(QuickActions.java:116) - I think we're done...........
+[2013-06-19 11:35:19,775] INFO 33922[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:49) - FireFox driver selected
+[2013-06-19 11:35:21,163] INFO 35310[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:56) - target property returned as Moose
+[2013-06-19 11:35:25,536] INFO 39683[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending robin@contatta.com	 to .login-form .login-field[name='username']
+[2013-06-19 11:35:28,619] INFO 42766[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending $yntellecT to .login-form .login-field[name='password']
+[2013-06-19 11:35:31,658] INFO 45805[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .login-form-container .form-login
+[2013-06-19 11:35:37,998] INFO 52145[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta
+[2013-06-19 11:35:38,009] INFO 52156[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:68) - Contatta
+[2013-06-19 11:35:38,009] INFO 52156[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-primary .icon-contatta
+[2013-06-19 11:35:41,083] INFO 55230[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-quick-item[data-command='briefcase']
+[2013-06-19 11:35:44,296] INFO 58443[main] - com.contatta.smoke.QuickActions.newCompany(QuickActions.java:109) - Contatta : Add Company
+[2013-06-19 11:35:44,297] INFO 58444[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .edit-cancel
+[2013-06-19 11:35:47,424] INFO 61571[main] - com.contatta.smoke.QuickActions.tearDown(QuickActions.java:116) - I think we're done...........
+[2013-06-19 11:35:47,506] INFO 61653[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:49) - FireFox driver selected
+[2013-06-19 11:35:48,866] INFO 63013[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:56) - target property returned as Moose
+[2013-06-19 11:35:53,161] INFO 67308[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending robin@contatta.com	 to .login-form .login-field[name='username']
+[2013-06-19 11:35:56,244] INFO 70391[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending $yntellecT to .login-form .login-field[name='password']
+[2013-06-19 11:35:59,281] INFO 73428[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .login-form-container .form-login
+[2013-06-19 11:36:05,448] INFO 79595[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta
+[2013-06-19 11:36:05,456] INFO 79603[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:68) - Contatta
+[2013-06-19 11:36:05,456] INFO 79603[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-primary .icon-contatta
+[2013-06-19 11:36:08,520] INFO 82667[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-quick-item[data-command='user']
+[2013-06-19 11:36:11,757] INFO 85904[main] - com.contatta.smoke.QuickActions.newContact(QuickActions.java:99) - Contatta : New Contact
+[2013-06-19 11:36:11,757] INFO 85904[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .edit-cancel
+[2013-06-19 11:36:14,898] INFO 89045[main] - com.contatta.smoke.QuickActions.tearDown(QuickActions.java:116) - I think we're done...........
+[2013-06-19 11:36:14,974] INFO 89121[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:49) - FireFox driver selected
+[2013-06-19 11:36:16,369] INFO 90516[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:56) - target property returned as Moose
+[2013-06-19 11:36:20,726] INFO 94873[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending robin@contatta.com	 to .login-form .login-field[name='username']
+[2013-06-19 11:36:23,807] INFO 97954[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending $yntellecT to .login-form .login-field[name='password']
+[2013-06-19 11:36:26,847] INFO100994[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .login-form-container .form-login
+[2013-06-19 11:36:33,169] INFO107316[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta
+[2013-06-19 11:36:33,176] INFO107323[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:68) - Contatta
+[2013-06-19 11:36:33,177] INFO107324[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-primary .icon-contatta
+[2013-06-19 11:36:36,245] INFO110392[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-quick-item[data-command='note']
+[2013-06-19 11:36:39,430] INFO113577[main] - com.contatta.smoke.QuickActions.statusUpdate(QuickActions.java:87) - Contatta : Status Update
+[2013-06-19 11:36:39,430] INFO113577[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending a note from the quick action test to .add-note-content .textarea-field-input
+[2013-06-19 11:36:42,487] INFO116634[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .add-note-header .edit-save
+[2013-06-19 11:36:45,563] INFO119710[main] - com.contatta.smoke.QuickActions.tearDown(QuickActions.java:116) - I think we're done...........
+[2013-06-19 11:58:40,647] INFO     0[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:49) - FireFox driver selected
+[2013-06-19 11:58:47,896] INFO  7249[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:56) - target property returned as Moose
+[2013-06-19 11:58:52,214] INFO 11567[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending robin@contatta.com	 to .login-form .login-field[name='username']
+[2013-06-19 11:58:55,303] INFO 14656[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending $yntellecT to .login-form .login-field[name='password']
+[2013-06-19 11:58:58,344] INFO 17697[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .login-form-container .form-login
+[2013-06-19 11:59:04,489] INFO 23842[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta
+[2013-06-19 11:59:04,499] INFO 23852[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:68) - Contatta
+[2013-06-19 11:59:04,501] INFO 23854[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-primary .icon-contatta
+[2013-06-19 11:59:07,578] INFO 26931[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-quick-item[data-command='mail']
+[2013-06-19 11:59:10,904] INFO 30257[main] - com.contatta.smoke.QuickActions.composeMessage(QuickActions.java:77) - Contatta : Compose Message
+[2013-06-19 11:59:10,905] INFO 30258[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .compose-message-header .button[data-action='cancelEntry']
+[2013-06-19 11:59:13,986] INFO 33339[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-primary .icon-contatta
+[2013-06-19 11:59:17,060] INFO 36413[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-quick-item[data-command='briefcase']
+[2013-06-19 11:59:20,268] INFO 39621[main] - com.contatta.smoke.QuickActions.newCompany(QuickActions.java:109) - Contatta : Add Company
+[2013-06-19 11:59:20,269] INFO 39622[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .edit-cancel
+[2013-06-19 11:59:23,394] INFO 42747[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-primary .icon-contatta
+[2013-06-19 11:59:26,469] INFO 45822[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-quick-item[data-command='user']
+[2013-06-19 11:59:29,648] INFO 49001[main] - com.contatta.smoke.QuickActions.newContact(QuickActions.java:99) - Contatta : New Contact
+[2013-06-19 11:59:29,648] INFO 49001[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .edit-cancel
+[2013-06-19 11:59:32,740] INFO 52093[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-primary .icon-contatta
+[2013-06-19 11:59:35,814] INFO 55167[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-quick-item[data-command='note']
+[2013-06-19 11:59:38,941] INFO 58294[main] - com.contatta.smoke.QuickActions.statusUpdate(QuickActions.java:87) - Contatta : Status Update
+[2013-06-19 11:59:38,941] INFO 58294[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending a note from the quick action test to .add-note-content .textarea-field-input
+[2013-06-19 11:59:42,010] INFO 61363[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .add-note-header .edit-save
+[2013-06-19 11:59:45,081] INFO 64434[main] - com.contatta.smoke.QuickActions.tearDown(QuickActions.java:116) - I think we're done...........
+[2013-06-19 12:06:41,960] INFO     0[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:49) - FireFox driver selected
+[2013-06-19 12:06:49,220] INFO  7260[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:56) - target property returned as Moose
+[2013-06-19 12:06:53,497] INFO 11537[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending robin@contatta.com	 to .login-form .login-field[name='username']
+[2013-06-19 12:06:56,586] INFO 14626[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending $yntellecT to .login-form .login-field[name='password']
+[2013-06-19 12:06:59,621] INFO 17661[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .login-form-container .form-login
+[2013-06-19 12:07:05,710] INFO 23750[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta
+[2013-06-19 12:07:05,720] INFO 23760[main] - com.contatta.smoke.QuickActions.setUp(QuickActions.java:68) - Contatta
+[2013-06-19 12:07:05,722] INFO 23762[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-primary .icon-contatta
+[2013-06-19 12:07:08,798] INFO 26838[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-quick-item[data-command='mail']
+[2013-06-19 12:07:12,121] INFO 30161[main] - com.contatta.smoke.QuickActions.composeMessage(QuickActions.java:77) - Contatta : Compose Message
+[2013-06-19 12:07:12,121] INFO 30161[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .compose-message-header .button[data-action='cancelEntry']
+[2013-06-19 12:07:15,206] INFO 33246[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-primary .icon-contatta
+[2013-06-19 12:07:18,280] INFO 36320[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-quick-item[data-command='briefcase']
+[2013-06-19 12:07:21,487] INFO 39527[main] - com.contatta.smoke.QuickActions.newCompany(QuickActions.java:109) - Contatta : Add Company
+[2013-06-19 12:07:21,487] INFO 39527[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .edit-cancel
+[2013-06-19 12:07:24,601] INFO 42641[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-primary .icon-contatta
+[2013-06-19 12:07:27,674] INFO 45714[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-quick-item[data-command='user']
+[2013-06-19 12:07:30,844] INFO 48884[main] - com.contatta.smoke.QuickActions.newContact(QuickActions.java:99) - Contatta : New Contact
+[2013-06-19 12:07:30,844] INFO 48884[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .edit-cancel
+[2013-06-19 12:07:33,934] INFO 51974[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-primary .icon-contatta
+[2013-06-19 12:07:37,011] INFO 55051[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .navigation-quick-item[data-command='note']
+[2013-06-19 12:07:40,136] INFO 58176[main] - com.contatta.smoke.QuickActions.statusUpdate(QuickActions.java:87) - Contatta : Status Update
+[2013-06-19 12:07:40,136] INFO 58176[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending a note from the quick action test to .add-note-content .textarea-field-input
+[2013-06-19 12:07:43,199] INFO 61239[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .add-note-header .edit-save
+[2013-06-19 12:07:46,273] INFO 64313[main] - com.contatta.smoke.QuickActions.tearDown(QuickActions.java:116) - I think we're done...........
+[2013-06-19 16:27:44,664] INFO     0[main] - com.contatta.smoke.ComposeEmail.setUp(ComposeEmail.java:53) - FireFox driver selected
+[2013-06-19 16:27:51,967] INFO  7303[main] - com.contatta.smoke.ComposeEmail.setUp(ComposeEmail.java:60) - target property returned as Moose
+[2013-06-19 16:27:56,489] INFO 11825[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending robin@contatta.com	 to .login-form .login-field[name='username']
+[2013-06-19 16:27:59,578] INFO 14914[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending $yntellecT to .login-form .login-field[name='password']
+[2013-06-19 16:28:02,638] INFO 17974[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .login-form-container .form-login
+[2013-06-19 16:28:09,098] INFO 24434[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta
+[2013-06-19 16:28:09,111] INFO 24447[main] - com.contatta.smoke.ComposeEmail.setUp(ComposeEmail.java:72) - Contatta
+[2013-06-19 16:28:09,113] INFO 24449[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .quick-menu-secondary-item[data-command='mailCompose']
+[2013-06-19 16:28:12,444] INFO 27780[main] - com.contatta.smoke.ComposeEmail.composeMessage(ComposeEmail.java:96) - found 3 text-field-inputs in compose window
+[2013-06-19 16:28:15,533] INFO 30869[main] - com.contatta.smoke.ComposeEmail.composeMessage(ComposeEmail.java:120) - found 2 text-field-inputs in compose window
+[2013-06-19 16:28:18,581] INFO 33917[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .dijitEditorIconCreateLink
+[2013-06-19 16:28:21,753] INFO 37089[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending http://www.mit.edu to .dijitInputInner[id='contatta_fields_RichEditor_0_0_urlInput']
+[2013-06-19 16:28:24,840] INFO 40176[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending a school to .dijitInputInner[id='contatta_fields_RichEditor_0_0_textInput']
+[2013-06-19 16:28:27,901] INFO 43237[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .dijitReset[id='contatta_fields_RichEditor_0_0_setButton']
+[2013-06-19 16:28:30,991] INFO 46327[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .dijitEditorIconInsertImage
+[2013-06-19 16:28:34,138] INFO 49474[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending https://upload.wikimedia.org/wikipedia/commons/3/3d/MIT_Main_Campus_Aerial.jpg to .dijitInputInner[id='contatta_fields_RichEditor_0_1_urlInput']
+[2013-06-19 16:28:37,274] INFO 52610[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .dijitReset[id='contatta_fields_RichEditor_0_1_setButton']
+[2013-06-19 16:28:40,371] INFO 55707[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .dijitEditorIconItalic
+[2013-06-19 16:28:43,481] INFO 58817[main] - com.contatta.smoke.ComposeEmail.composeMessage(ComposeEmail.java:142) - saved window handle {3fc5237d-fad5-174b-9aa1-3af4a0f3da5f}
+[2013-06-19 16:28:46,606] INFO 61942[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .contatta-mail-compose .send-button:nth-child(2) .dropdown-button-primary
+[2013-06-19 16:28:49,687] INFO 65023[main] - com.contatta.smoke.ComposeEmail.composeMessage(ComposeEmail.java:158) - attempted to click the send button, [[FirefoxDriver: firefox on MAC (61d435ed-7908-db4d-906b-a6bd548fe856)] -> css selector: .compose-message-fields .edit-row .text-field-input]
+[2013-06-19 16:28:52,690] INFO 68026[main] - com.contatta.smoke.ComposeEmail.tearDown(ComposeEmail.java:166) - I think we're done...........
+[2013-06-19 16:54:01,767] INFO     0[main] - com.contatta.smoke.Newsfeed.setUp(Newsfeed.java:54) - FireFox driver selected
+[2013-06-19 16:54:08,990] INFO  7223[main] - com.contatta.smoke.Newsfeed.setUp(Newsfeed.java:61) - target property returned as Moose
+[2013-06-19 16:54:13,318] INFO 11551[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending robin@contatta.com	 to .login-form .login-field[name='username']
+[2013-06-19 16:54:16,414] INFO 14647[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending $yntellecT to .login-form .login-field[name='password']
+[2013-06-19 16:54:19,465] INFO 17698[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .login-form-container .form-login
+[2013-06-19 16:54:25,563] INFO 23796[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta
+[2013-06-19 16:54:25,573] INFO 23806[main] - com.contatta.smoke.Newsfeed.setUp(Newsfeed.java:73) - Contatta
+[2013-06-19 16:54:25,575] INFO 23808[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .quick-menu-primary-item .icon-podcast
+[2013-06-19 16:54:28,741] INFO 26974[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta : All Items
+[2013-06-19 16:54:28,755] INFO 26988[main] - com.contatta.smoke.TestUtil.getGridIterator(TestUtil.java:124) - looks like there are 18 elements currently pulled in the dgrid
+[2013-06-19 16:54:28,996] INFO 27229[main] - com.contatta.smoke.Newsfeed.walkTimeline(Newsfeed.java:85) - Robin Robbins
+Wed Jun 19 at 12:07p (5 hrs ago)
+a note from the quick action test
+| | | |
+[2013-06-19 16:54:29,230] INFO 27463[main] - com.contatta.smoke.Newsfeed.walkTimeline(Newsfeed.java:85) - Robin Robbins
+Wed Jun 19 at 11:59a (5 hrs ago)
+a note from the quick action test
+| | | |
+[2013-06-19 16:54:29,461] INFO 27694[main] - com.contatta.smoke.Newsfeed.walkTimeline(Newsfeed.java:85) - Robin Robbins
+Wed Jun 19 at 11:36a (5 hrs ago)
+a note from the quick action test
+| | | |
+[2013-06-19 16:54:29,694] INFO 27927[main] - com.contatta.smoke.Newsfeed.walkTimeline(Newsfeed.java:85) - Robin Robbins
+Wed Jun 19 at 11:29a (5 hrs ago)
+a note from the quick action test
+| | | |
+[2013-06-19 16:54:29,930] INFO 28163[main] - com.contatta.smoke.Newsfeed.walkTimeline(Newsfeed.java:85) - Robin Robbins
+Wed Jun 19 at 11:14a (6 hrs ago)
+just some text for a note
+| | | |
+[2013-06-19 16:54:29,931] INFO 28164[main] - com.contatta.smoke.Newsfeed.tearDown(Newsfeed.java:93) - I think we're done...........
+[2013-06-19 17:28:31,718] INFO     0[main] - com.contatta.smoke.Newsfeed.setUp(Newsfeed.java:54) - FireFox driver selected
+[2013-06-19 17:28:39,937] INFO  8219[main] - com.contatta.smoke.Newsfeed.setUp(Newsfeed.java:61) - target property returned as Moose
+[2013-06-19 17:28:44,251] INFO 12533[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending robin@contatta.com	 to .login-form .login-field[name='username']
+[2013-06-19 17:28:48,837] INFO 17119[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending $yntellecT to .login-form .login-field[name='password']
+[2013-06-19 17:28:51,874] INFO 20156[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .login-form-container .form-login
+[2013-06-19 17:28:58,210] INFO 26492[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta
+[2013-06-19 17:28:58,223] INFO 26505[main] - com.contatta.smoke.Newsfeed.setUp(Newsfeed.java:73) - Contatta
+[2013-06-19 17:28:58,225] INFO 26507[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .quick-menu-primary-item .icon-podcast
+[2013-06-19 17:29:01,397] INFO 29679[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta : All Items
+[2013-06-19 17:29:01,415] INFO 29697[main] - com.contatta.smoke.TestUtil.getGridIterator(TestUtil.java:124) - looks like there are 18 elements currently pulled in the dgrid
+[2013-06-19 17:29:01,655] INFO 29937[main] - com.contatta.smoke.Newsfeed.walkTimeline(Newsfeed.java:85) - Robin Robbins
+Wed Jun 19 at 12:07p (5 hrs ago)
+a note from the quick action test
+| | | |
+[2013-06-19 17:29:01,890] INFO 30172[main] - com.contatta.smoke.Newsfeed.walkTimeline(Newsfeed.java:85) - Robin Robbins
+Wed Jun 19 at 11:59a (5 hrs ago)
+a note from the quick action test
+| | | |
+[2013-06-19 17:29:02,124] INFO 30406[main] - com.contatta.smoke.Newsfeed.walkTimeline(Newsfeed.java:85) - Robin Robbins
+Wed Jun 19 at 11:36a (6 hrs ago)
+a note from the quick action test
+| | | |
+[2013-06-19 17:29:02,364] INFO 30646[main] - com.contatta.smoke.Newsfeed.walkTimeline(Newsfeed.java:85) - Robin Robbins
+Wed Jun 19 at 11:29a (6 hrs ago)
+a note from the quick action test
+| | | |
+[2013-06-19 17:29:02,598] INFO 30880[main] - com.contatta.smoke.Newsfeed.walkTimeline(Newsfeed.java:85) - Robin Robbins
+Wed Jun 19 at 11:14a (6 hrs ago)
+just some text for a note
+| | | |
+[2013-06-19 17:29:02,600] INFO 30882[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .quick-menu-primary-item .icon-podcast
+[2013-06-19 17:29:02,625] INFO 30907[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .quick-menu-primary-item .icon-podcast
+[2013-06-19 17:29:02,644] INFO 30926[main] - com.contatta.smoke.Newsfeed.tearDown(Newsfeed.java:110) - I think we're done...........
+[2013-06-19 17:34:03,224] INFO     0[main] - com.contatta.smoke.Newsfeed.setUp(Newsfeed.java:54) - FireFox driver selected
+[2013-06-19 17:34:10,550] INFO  7326[main] - com.contatta.smoke.Newsfeed.setUp(Newsfeed.java:61) - target property returned as Moose
+[2013-06-19 17:34:14,886] INFO 11662[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending robin@contatta.com	 to .login-form .login-field[name='username']
+[2013-06-19 17:34:17,974] INFO 14750[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending $yntellecT to .login-form .login-field[name='password']
+[2013-06-19 17:34:21,010] INFO 17786[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .login-form-container .form-login
+[2013-06-19 17:34:27,556] INFO 24332[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta
+[2013-06-19 17:34:27,566] INFO 24342[main] - com.contatta.smoke.Newsfeed.setUp(Newsfeed.java:73) - Contatta
+[2013-06-19 17:34:27,569] INFO 24345[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .quick-menu-primary-item .icon-podcast
+[2013-06-19 17:34:30,747] INFO 27523[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta : All Items
+[2013-06-19 17:34:30,764] INFO 27540[main] - com.contatta.smoke.TestUtil.getGridIterator(TestUtil.java:124) - looks like there are 18 elements currently pulled in the dgrid
+[2013-06-19 17:34:31,012] INFO 27788[main] - com.contatta.smoke.Newsfeed.walkTimeline(Newsfeed.java:85) - Robin Robbins
+Wed Jun 19 at 12:07p (5 hrs ago)
+a note from the quick action test
+| | | |
+[2013-06-19 17:34:31,255] INFO 28031[main] - com.contatta.smoke.Newsfeed.walkTimeline(Newsfeed.java:85) - Robin Robbins
+Wed Jun 19 at 11:59a (6 hrs ago)
+a note from the quick action test
+| | | |
+[2013-06-19 17:34:31,501] INFO 28277[main] - com.contatta.smoke.Newsfeed.walkTimeline(Newsfeed.java:85) - Robin Robbins
+Wed Jun 19 at 11:36a (6 hrs ago)
+a note from the quick action test
+| | | |
+[2013-06-19 17:34:31,741] INFO 28517[main] - com.contatta.smoke.Newsfeed.walkTimeline(Newsfeed.java:85) - Robin Robbins
+Wed Jun 19 at 11:29a (6 hrs ago)
+a note from the quick action test
+| | | |
+[2013-06-19 17:34:31,982] INFO 28758[main] - com.contatta.smoke.Newsfeed.walkTimeline(Newsfeed.java:85) - Robin Robbins
+Wed Jun 19 at 11:14a (6 hrs ago)
+just some text for a note
+| | | |
+[2013-06-19 17:34:31,983] INFO 28759[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .dijitTabCloseButton
+[2013-06-19 17:34:35,129] INFO 31905[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .quick-menu-primary-item .icon-podcast
+[2013-06-19 17:34:38,284] INFO 35060[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta : All Items
+[2013-06-19 17:34:38,285] INFO 35061[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .dgrid-row:nth-child(2) .toggle-like
+[2013-06-19 17:34:41,372] INFO 38148[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .dijitTabCloseButton
+[2013-06-19 17:34:44,507] INFO 41283[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .quick-menu-primary-item .icon-podcast
+[2013-06-19 17:34:47,689] INFO 44465[main] - com.contatta.smoke.TestUtil.whereAmI(TestUtil.java:221) - we are at Contatta : All Items
+[2013-06-19 17:34:47,689] INFO 44465[main] - com.contatta.smoke.TestUtil.click(TestUtil.java:59) - clicking .dgrid-row:nth-child(2) .icon-pencil
+[2013-06-19 17:34:50,886] INFO 47662[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:178) - sending What happens with this bit of text? to .edit-note-content .textarea-field-input
+[2013-06-19 17:34:50,901] WARN 47677[main] - com.contatta.smoke.TestUtil.send(TestUtil.java:184) - didn't find .edit-note-content .textarea-field-input
