@@ -3,6 +3,7 @@ package com.contatta.smoke;
 import com.contatta.smoke.Config;
 import com.contatta.smoke.TestUtil;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -71,43 +72,43 @@ public class QuickActions {
 		@Test
 		public void composeMessage() throws Exception {
 		    
-		    util.click(".navigation-primary .icon-contatta");
-		    util.click(".navigation-quick-item[data-command='mail']");
+			driver.findElement(By.cssSelector(".navigation-primary .icon-contatta")).click();
+			driver.findElement(By.cssSelector(".navigation-quick-item[data-command='mail']")).click();
 		    String title = js.executeScript("return document.title").toString();
 		    log4j.info(title);
-		    util.click(".compose-message-header .button[data-action='cancelEntry']");
+		    driver.findElement(By.cssSelector(".compose-message-header .button[data-action='cancelEntry']")).click();
 		}
 		
 		@Test
 		public void statusUpdate() throws Exception {
 		    
-		    util.click(".navigation-primary .icon-contatta");
-		    util.click(".navigation-quick-item[data-command='note']");
+			driver.findElement(By.cssSelector(".navigation-primary .icon-contatta")).click();
+			driver.findElement(By.cssSelector(".navigation-quick-item[data-command='note']")).click();
 		    String title = js.executeScript("return document.title").toString();
 		    log4j.info(title);
-		    util.send(".add-note-content .textarea-field-input","a note from the quick action test");
-			util.click(".add-note-header .edit-save");
+		    driver.findElement(By.cssSelector(".add-note-content .textarea-field-input")).sendKeys("a note from the quick action test");
+		    driver.findElement(By.cssSelector(".add-note-header .edit-save")).click();
 		}
 		
 		@Test
 		public void newContact() throws Exception {
 				
 
-		    util.click(".navigation-primary .icon-contatta");
-		    util.click(".navigation-quick-item[data-command='user']");
+			driver.findElement(By.cssSelector(".navigation-primary .icon-contatta")).click();
+			driver.findElement(By.cssSelector(".navigation-quick-item[data-command='user']")).click();
 		    String title = js.executeScript("return document.title").toString();
 		    log4j.info(title);
-		    util.click(".edit-cancel");
+		    driver.findElement(By.cssSelector(".edit-cancel")).click();
 		}
 		
 		@Test
 		public void newCompany() throws Exception {
 		    
-		    util.click(".navigation-primary .icon-contatta");
-		    util.click(".navigation-quick-item[data-command='briefcase']");
+			driver.findElement(By.cssSelector(".navigation-primary .icon-contatta")).click();
+			driver.findElement(By.cssSelector(".navigation-quick-item[data-command='briefcase']")).click();
 		    String title = js.executeScript("return document.title").toString();
 		    log4j.info(title);
-		    util.click(".edit-cancel");
+		    driver.findElement(By.cssSelector(".edit-cancel")).click();
 		}
 		
 		@AfterClass
