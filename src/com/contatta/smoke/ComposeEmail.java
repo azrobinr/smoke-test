@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.junit.*;
@@ -48,6 +49,10 @@ public class ComposeEmail {
 			else if(cfg.getProperty("driver").toLowerCase().contains("chrome")){
 				log4j.info("Chrome driver selected");
 				driver = new ChromeDriver();
+			}
+			else if(cfg.getProperty("driver").toLowerCase().contains("safari")){
+				log4j.info("Safari driver selected");
+				driver = new SafariDriver();
 			}
 			else{
 				log4j.info("FireFox driver selected");
@@ -123,20 +128,20 @@ public class ComposeEmail {
 			util.snooze(z);
 	      
 			//add a link
-			util.click(".dijitEditorIconCreateLink");
-			util.send(".dijitInputInner[id='contatta_fields_RichEditor_0_0_urlInput']","http://www.mit.edu");
-			util.send(".dijitInputInner[id='contatta_fields_RichEditor_0_0_textInput']","a school");
-			util.click(".dijitReset[id='contatta_fields_RichEditor_0_0_setButton']");
+			driver.findElement(By.cssSelector(".dijitEditorIconCreateLink")).click();
+			driver.findElement(By.cssSelector(".dijitInputInner[id='contatta_fields_RichEditor_0_0_urlInput']")).sendKeys("http://www.mit.edu");
+			driver.findElement(By.cssSelector(".dijitInputInner[id='contatta_fields_RichEditor_0_0_textInput']")).sendKeys("a school");
+			driver.findElement(By.cssSelector(".dijitReset[id='contatta_fields_RichEditor_0_0_setButton']")).click();
 			
 			//add an image
-			util.click(".dijitEditorIconInsertImage");
-			util.send(".dijitInputInner[id='contatta_fields_RichEditor_0_1_urlInput']",
+			driver.findElement(By.cssSelector(".dijitEditorIconInsertImage")).click();
+			driver.findElement(By.cssSelector(".dijitInputInner[id='contatta_fields_RichEditor_0_1_urlInput']")).sendKeys(
 					"https://upload.wikimedia.org/wikipedia/commons/3/3d/MIT_Main_Campus_Aerial.jpg");
 			//http://licensingbook.com/wp-content/uploads/2013/05/Email-Marketing-SPAM-Law.jpg
-			util.click(".dijitReset[id='contatta_fields_RichEditor_0_1_setButton']");
+			driver.findElement(By.cssSelector(".dijitReset[id='contatta_fields_RichEditor_0_1_setButton']")).click();
 				
 			// click the italic button
-			util.click(".dijitEditorIconItalic");
+			driver.findElement(By.cssSelector(".dijitEditorIconItalic")).click();
 		    
 			String handle = driver.getWindowHandle();
 			log4j.info("saved window handle " + handle);
@@ -154,7 +159,7 @@ public class ComposeEmail {
 			util.snooze(z);
 		    driver.switchTo().window(handle);
 		    
-		    util.click(".contatta-mail-compose .send-button:nth-child(2) .dropdown-button-primary");
+		    driver.findElement(By.cssSelector(".contatta-mail-compose .send-button:nth-child(2) .dropdown-button-primary")).click();
 		    log4j.info("attempted to click the send button, " + element.toString());
 		    util.snooze(z);
 		}
