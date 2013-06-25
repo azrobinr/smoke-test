@@ -174,6 +174,24 @@ public class TestUtil {
 		return (element.getText());
 	}
 	
+	boolean isTextPresent(String text) {
+		if(driver.getPageSource().contains(text)) {
+			log4j.info(text = " is present");
+			return true;
+		}
+		log4j.info(text = " is not on the page");
+		return false;
+	}
+	
+	boolean isVisible(String selector) {
+		if(driver.findElement(By.cssSelector(selector)).isDisplayed()){
+			log4j.info(selector = " is displayed");
+			return true;
+		}
+		log4j.info(selector = " is not displayed");
+		return false;
+	}
+	
 	void send(String selector, String keys) {
 		log4j.info("sending " + keys + " to " + selector);
 		try {
