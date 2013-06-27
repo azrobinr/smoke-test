@@ -176,19 +176,32 @@ public class TestUtil {
 	
 	boolean isTextPresent(String text) {
 		if(driver.getPageSource().contains(text)) {
-			log4j.info(text = " is present");
+			log4j.info(text + " is present");
 			return true;
 		}
-		log4j.info(text = " is not on the page");
+		log4j.info(text + " is not on the page");
 		return false;
 	}
 	
 	boolean isVisible(String selector) {
-		if(driver.findElement(By.cssSelector(selector)).isDisplayed()){
-			log4j.info(selector = " is displayed");
-			return true;
+		try{
+			if(driver.findElement(By.cssSelector(selector)).isDisplayed()){
+				log4j.info(selector + " is displayed");
+				return true;
+			}
 		}
-		log4j.info(selector = " is not displayed");
+		catch(NoSuchElementException e){
+			log4j.error(selector + " isVisible threw " + e);
+			log4j.error("we're handling it and just returning a false");
+			return false;
+		}
+		catch(ElementNotVisibleException e){
+    		log4j.error(selector + " is not Visible");
+    		log4j.error("...wasn't expecting the element.isDisplayed method to throw this.");
+    		return false;
+    	}
+		
+		log4j.info(selector + " is not displayed (bypassed try/catch)");
 		return false;
 	}
 	
