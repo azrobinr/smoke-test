@@ -201,7 +201,7 @@ public class TestUtil {
     		return false;
     	}
 		
-		log4j.info(selector + " is not displayed (bypassed try/catch)");
+		log4j.info(selector + " is not displayed (outside of try/catch)");
 		return false;
 	}
 	
