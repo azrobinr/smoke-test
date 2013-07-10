@@ -1,5 +1,7 @@
 package com.contatta.smoke;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import com.contatta.smoke.Config;
@@ -68,6 +70,11 @@ public class ComposeEmail {
 			driver.manage().window().maximize();
 			
 			//login
+			Date date = new Date();
+			SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy h:mm:ss a");
+			String formattedDate = sdf.format(date);
+			log4j.info("Test beginning at " +formattedDate);
+			log4j.info("URL is " + cfg.getProperty("url"));
 			driver.get(cfg.getProperty("url"));
 			util.snooze(z);
 			util.send(".login-form .login-field[name='username']",cfg.getProperty("usr"));

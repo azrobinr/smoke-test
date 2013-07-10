@@ -14,6 +14,8 @@ import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.junit.*;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Iterator;
 //import org.hamcrest.*;
@@ -66,6 +68,11 @@ public class CompanyDetail {
 			driver.manage().window().maximize();
 			
 			//login
+			Date date = new Date();
+			SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy h:mm:ss a");
+			String formattedDate = sdf.format(date);
+			log4j.info("Test beginning at " +formattedDate);
+			log4j.info("URL is " + cfg.getProperty("url"));
 			driver.get(cfg.getProperty("url"));
 			util.snooze(z);
 			util.send(".login-form .login-field[name='username']",cfg.getProperty("usr"));
