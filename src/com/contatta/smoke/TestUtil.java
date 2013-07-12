@@ -115,6 +115,63 @@ public class TestUtil {
 		return (element.getAttribute(name));
 	}
 	
+	Iterator<WebElement> getElementIterator(String selector){
+		List<WebElement> elements = null;
+		Iterator<WebElement> iterator;
+		try{
+			elements = driver.findElements(By.cssSelector(selector));
+			int size = elements.size();
+			log4j.info("looks like there are " + size + " elements in " + selector);
+			Assert.assertTrue(size>0);
+			
+		}
+		catch(AssertionError e){
+			log4j.error("Warning: Expected iterator to contain some elements, it didn't");
+			driver.quit();	
+			System.exit(1);
+		}
+		catch (NoSuchElementException e) {
+			log4j.error("didn't find " + selector);
+			driver.quit();	
+			System.exit(1);
+		}
+		catch(ElementNotVisibleException e){
+    		log4j.error(selector + " is not Visible?");
+    		log4j.error("...this exception was caught in TestUtil.");
+    		driver.close();
+    		System.exit(1);
+    	}
+		iterator = elements.iterator();
+		return iterator;
+	}
+	
+	List<WebElement> getElementList(String selector){
+		List<WebElement> elements = null;
+		try{
+			elements = driver.findElements(By.cssSelector(selector));
+			int size = elements.size();
+			log4j.info("looks like there are " + size + " elements in " + selector);
+			Assert.assertTrue(size>0);
+			
+		}
+		catch(AssertionError e){
+			log4j.error("Warning: Expected iterator to contain some elements, it didn't");
+			driver.quit();	
+			System.exit(1);
+		}
+		catch (NoSuchElementException e) {
+			log4j.error("didn't find " + selector);
+			driver.quit();	
+			System.exit(1);
+		}
+		catch(ElementNotVisibleException e){
+    		log4j.error(selector + " is not Visible?");
+    		log4j.error("...this exception was caught in TestUtil.");
+    		driver.close();
+    		System.exit(1);
+    	}
+		return elements;
+	}
 	Iterator<WebElement> getGridIterator(String selector){
 		List<WebElement> elements = null;
 		Iterator<WebElement> iterator;
