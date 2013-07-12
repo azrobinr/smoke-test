@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="smoke-test">
+    <property environment="env"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="smoke-test.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/commons-codec-1.6.jar"/>
+        <pathelement location="lib/commons-collections-3.2.1.jar"/>
+        <pathelement location="lib/commons-exec-1.1.jar"/>
+        <pathelement location="lib/commons-io-2.2.jar"/>
+        <pathelement location="lib/commons-jxpath-1.3.jar"/>
+        <pathelement location="lib/commons-lang3-3.1.jar"/>
+        <pathelement location="lib/commons-logging-1.1.1.jar"/>
+        <pathelement location="lib/cssparser-0.9.8.jar"/>
+        <pathelement location="lib/guava-14.0.jar"/>
+        <pathelement location="lib/hamcrest-core-1.3.jar"/>
+        <pathelement location="lib/httpclient-4.2.1.jar"/>
+        <pathelement location="lib/httpcore-4.2.1.jar"/>
+        <pathelement location="lib/json-20080701.jar"/>
+        <pathelement location="lib/junit-dep-4.11.jar"/>
+        <pathelement location="lib/log4j-1.2.17.jar"/>
+        <pathelement location="lib/netty-3.6.6.Final.jar"/>
+        <pathelement location="lib/phantomjsdriver-1.0.1.jar"/>
+        <pathelement location="lib/selenium-java-2.31.0.jar"/>
+        <pathelement location="lib/testng-6.8.jar"/>
+    </path>
+    <path id="run.AddCompany.classpath">
+        <pathelement location="cfg"/>
+        <path refid="smoke-test.classpath"/>
+    </path>
+    <path id="run.AddContact.classpath">
+        <pathelement location="cfg"/>
+        <path refid="smoke-test.classpath"/>
+    </path>
+    <path id="run.CompanyDetail.classpath">
+        <pathelement location="cfg"/>
+        <path refid="smoke-test.classpath"/>
+    </path>
+    <path id="run.CompanyEdit.classpath">
+        <pathelement location="cfg"/>
+        <path refid="smoke-test.classpath"/>
+    </path>
+    <path id="run.ComposeEmail.composeMessage.classpath">
+        <pathelement location="cfg"/>
+        <path refid="smoke-test.classpath"/>
+    </path>
+    <path id="run.ComposeEmail.classpath">
+        <pathelement location="cfg"/>
+        <path refid="smoke-test.classpath"/>
+    </path>
+    <path id="run.ContactDetail.classpath">
+        <pathelement location="cfg"/>
+        <path refid="smoke-test.classpath"/>
+    </path>
+    <path id="run.QuickActions.classpath">
+        <pathelement location="cfg"/>
+        <path refid="smoke-test.classpath"/>
+    </path>
+    <path id="run.StatusUpdate.classpath">
+        <pathelement location="cfg"/>
+        <path refid="smoke-test.classpath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="smoke-test.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="AddCompany">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.contatta.smoke.AddCompany" todir="${junit.output.dir}"/>
+            <classpath refid="run.AddCompany.classpath"/>
+        </junit>
+    </target>
+    <target name="AddContact">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.contatta.smoke.AddContact" todir="${junit.output.dir}"/>
+            <classpath refid="run.AddContact.classpath"/>
+        </junit>
+    </target>
+    <target name="CompanyDetail">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.contatta.smoke.CompanyDetail" todir="${junit.output.dir}"/>
+            <classpath refid="run.CompanyDetail.classpath"/>
+        </junit>
+    </target>
+    <target name="CompanyEdit">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.contatta.smoke.CompanyEdit" todir="${junit.output.dir}"/>
+            <classpath refid="run.CompanyEdit.classpath"/>
+        </junit>
+    </target>
+    <target name="ComposeEmail.composeMessage">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.contatta.smoke.ComposeEmail" todir="${junit.output.dir}"/>
+            <classpath refid="run.ComposeEmail.composeMessage.classpath"/>
+        </junit>
+    </target>
+    <target name="ComposeEmail">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.contatta.smoke.ComposeEmail" todir="${junit.output.dir}"/>
+            <classpath refid="run.ComposeEmail.classpath"/>
+        </junit>
+    </target>
+    <target name="ContactDetail">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.contatta.smoke.ContactDetail" todir="${junit.output.dir}"/>
+            <classpath refid="run.ContactDetail.classpath"/>
+        </junit>
+    </target>
+    <target name="QuickActions">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.contatta.smoke.QuickActions" todir="${junit.output.dir}"/>
+            <classpath refid="run.QuickActions.classpath"/>
+        </junit>
+    </target>
+    <target name="StatusUpdate">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.contatta.smoke.StatusUpdate" todir="${junit.output.dir}"/>
+            <classpath refid="run.StatusUpdate.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
