@@ -61,7 +61,7 @@ public class CompanyDetail {
 			
 			z = Integer.parseInt(cfg.getProperty("zzz")); // sValue to snooze in seconds
 		    maxGridLoopCount = Integer.parseInt(cfg.getProperty("loop"));
-			String target = cfg.getProperty("targetContact");
+			String target = cfg.getProperty("targetCompany");
 			log4j.info("target property returned as " + target);
 			util = new TestUtil(driver, log4j, z);
 			js = (JavascriptExecutor) driver;
@@ -113,7 +113,7 @@ public class CompanyDetail {
 			Assert.assertTrue(util.isVisible(selector));
 			String url = driver.findElement(By.cssSelector(selector)).getText();
 			log4j.info("Company URL is " + url);
-			Assert.assertTrue(url.contains("http:"));
+			//Assert.assertTrue(url.contains("http:"));
 		}
 		
 		@Test
@@ -123,9 +123,36 @@ public class CompanyDetail {
 			String num = driver.findElement(By.cssSelector(selector)).getText();
 			log4j.info("Company phone number  is " + num);
 			Assert.assertTrue(num.length()>9);
-			Assert.assertTrue(num.contains("-"));
+			//Assert.assertTrue(num.contains("-"));
 		}
 		
+		@Test
+		public void getRating() throws Exception {
+			String selector = ".p-rating";
+			Assert.assertTrue(util.isVisible(selector));
+			String rating = driver.findElement(By.cssSelector(selector)).getAttribute("data-rating");
+			log4j.info("Company Rating is " + rating);
+			
+		}
+		
+		@Test
+		public void getStatus() throws Exception {
+			String selector = ".p-status";
+			Assert.assertTrue(util.isVisible(selector));
+			selector = ".p-status .detail-row-value";
+			String status = driver.findElement(By.cssSelector(selector)).getAttribute("title");
+			log4j.info("Company Status is " + status);
+			//Assert.assertTrue(url.contains("http:"));
+		}
+		
+		@Test
+		public void getType() throws Exception {
+			String selector = ".p-type";
+			Assert.assertTrue(util.isVisible(selector));
+			String type = driver.findElement(By.cssSelector(selector)).getAttribute("title");
+			log4j.info("Company Type is " + type);
+			//Assert.assertTrue(url.contains("http:"));
+		}
 		@Test
 		public void addNote() throws Exception {
 		    // set status
