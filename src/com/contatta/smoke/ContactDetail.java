@@ -37,6 +37,12 @@ public class ContactDetail {
 	
 	static int z = 5;
 	static int maxGridLoopCount = 5;
+	
+	static String expectedPhoneNumber = "+";
+	static String expectedSource = "Other";
+	static String expectedStatus = "Active";
+	static String expectedTag = "VIP";
+	static String expectedType = "Other";
 		
 		@BeforeClass
 		public static void setUp() throws Exception {
@@ -125,6 +131,57 @@ public class ContactDetail {
 			Assert.assertTrue(num.length()>9);
 			Assert.assertTrue(num.contains("-"));
 		}
+		
+		@Test
+		public void getRating() throws Exception {
+			String selector = ".p-rating";
+			Assert.assertTrue(util.isVisible(selector));
+			String rating = driver.findElement(By.cssSelector(selector)).getAttribute("data-rating");
+			log4j.info("Company Rating is " + rating);
+			
+		}
+		
+		@Test
+		public void getSource() throws Exception {
+			String selector = ".p-source";
+			Assert.assertTrue(util.isVisible(selector));
+			selector = ".p-source .detail-row-value";
+			String source = driver.findElement(By.cssSelector(selector)).getAttribute("title");
+			log4j.info("Company Source is " + source);
+			Assert.assertTrue(source.contains(expectedSource));
+		}
+		@Test
+		public void getStatus() throws Exception {
+			String selector = ".p-status";
+			Assert.assertTrue(util.isVisible(selector));
+			selector = ".p-status .detail-row-value";
+			String status = driver.findElement(By.cssSelector(selector)).getAttribute("title");
+			log4j.info("Company Status is " + status);
+			Assert.assertTrue(status.contains(expectedStatus));
+			
+		}
+		
+		@Test
+		public void getTags() throws Exception {
+			String selector = ".p-tags";
+			Assert.assertTrue(util.isVisible(selector));
+			selector = ".p-tags .detail-row-value";
+			String tags = driver.findElement(By.cssSelector(selector)).getText();
+			log4j.info("Tags: " + tags);
+			Assert.assertTrue(tags.contains(expectedTag));
+			
+		}
+		
+		@Test
+		public void getType() throws Exception {
+			String selector = ".p-type";
+			Assert.assertTrue(util.isVisible(selector));
+			selector = ".p-type .detail-row-value";
+			String type = driver.findElement(By.cssSelector(selector)).getAttribute("title");
+			log4j.info("Company Type is " + type);
+			
+		}
+		
 		
 		@Test
 		public void addNote() throws Exception {
