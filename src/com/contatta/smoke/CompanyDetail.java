@@ -37,6 +37,11 @@ public class CompanyDetail {
 	
 	static int z = 5;
 	static int maxGridLoopCount = 5;
+	static String expectedPhoneNumber = "+61";
+	static String expectedSource = "Referral";
+	static String expectedStatus = "New";
+	static String expectedTag = "VIP";
+	static String expectedType = "Prospect";
 		
 		@BeforeClass
 		public static void setUp() throws Exception {
@@ -113,7 +118,7 @@ public class CompanyDetail {
 			Assert.assertTrue(util.isVisible(selector));
 			String url = driver.findElement(By.cssSelector(selector)).getText();
 			log4j.info("Company URL is " + url);
-			//Assert.assertTrue(url.contains("http:"));
+			Assert.assertTrue(url.contains("www"));
 		}
 		
 		@Test
@@ -123,7 +128,7 @@ public class CompanyDetail {
 			String num = driver.findElement(By.cssSelector(selector)).getText();
 			log4j.info("Company phone number  is " + num);
 			Assert.assertTrue(num.length()>9);
-			//Assert.assertTrue(num.contains("-"));
+			Assert.assertTrue(num.contains(expectedPhoneNumber));
 		}
 		
 		@Test
@@ -136,23 +141,46 @@ public class CompanyDetail {
 		}
 		
 		@Test
+		public void getSource() throws Exception {
+			String selector = ".p-source";
+			Assert.assertTrue(util.isVisible(selector));
+			selector = ".p-source .detail-row-value";
+			String source = driver.findElement(By.cssSelector(selector)).getAttribute("title");
+			log4j.info("Company Source is " + source);
+			Assert.assertTrue(source.contains(expectedSource));
+		}
+		@Test
 		public void getStatus() throws Exception {
 			String selector = ".p-status";
 			Assert.assertTrue(util.isVisible(selector));
 			selector = ".p-status .detail-row-value";
 			String status = driver.findElement(By.cssSelector(selector)).getAttribute("title");
 			log4j.info("Company Status is " + status);
-			//Assert.assertTrue(url.contains("http:"));
+			Assert.assertTrue(status.contains(expectedStatus));
+			
+		}
+		
+		@Test
+		public void getTags() throws Exception {
+			String selector = ".p-tags";
+			Assert.assertTrue(util.isVisible(selector));
+			selector = ".p-tags .detail-row-value";
+			String tags = driver.findElement(By.cssSelector(selector)).getText();
+			log4j.info("Tags: " + tags);
+			Assert.assertTrue(tags.contains(expectedTag));
+			
 		}
 		
 		@Test
 		public void getType() throws Exception {
 			String selector = ".p-type";
 			Assert.assertTrue(util.isVisible(selector));
+			selector = ".p-type .detail-row-value";
 			String type = driver.findElement(By.cssSelector(selector)).getAttribute("title");
 			log4j.info("Company Type is " + type);
-			//Assert.assertTrue(url.contains("http:"));
+			
 		}
+		
 		@Test
 		public void addNote() throws Exception {
 		    // set status
