@@ -137,7 +137,7 @@ public class ContactDetail {
 			String selector = ".detail-row.p-rating";
 			Assert.assertTrue(util.isVisible(selector));
 			String rating = driver.findElement(By.cssSelector(selector)).getAttribute("data-rating");
-			log4j.info("Company Rating is " + rating);
+			log4j.info("Contact Rating is " + rating);
 			
 		}
 		
@@ -147,16 +147,16 @@ public class ContactDetail {
 			Assert.assertTrue(util.isVisible(selector));
 			selector = ".p-source .detail-row-value";
 			String source = driver.findElement(By.cssSelector(selector)).getAttribute("title");
-			log4j.info("Company Source is " + source);
+			log4j.info("Contact Source is " + source);
 			Assert.assertTrue(source.contains(expectedSource));
 		}
 		@Test
 		public void getStatus() throws Exception {
 			String selector = ".detail-row.p-status";
 			Assert.assertTrue(util.isVisible(selector));
-			selector = ".p-status .detail-row-value";
+			selector = ".detail-row.p-status .detail-row-value";
 			String status = driver.findElement(By.cssSelector(selector)).getAttribute("title");
-			log4j.info("Company Status is " + status);
+			log4j.info("Contact Status is " + status);
 			Assert.assertTrue(status.contains(expectedStatus));
 			
 		}

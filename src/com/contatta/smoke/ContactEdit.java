@@ -34,7 +34,7 @@ public class ContactEdit {
 	
 	static String name = "";
 	static String pageTitle = "";
-	static String status = "new";
+	static String status = "active";
 	
 	static String address = "1060 W Addison";
 	static String city = "Chicago";
