@@ -115,7 +115,7 @@ public class ContactDetail {
 		
 		@Test
 		public void getEmail() throws Exception {
-			String selector = ".p-email";
+			String selector = ".detail-row.p-email";
 			Assert.assertTrue(util.isVisible(selector));
 			String mailto = driver.findElement(By.cssSelector(selector)).getText();
 			log4j.info("Contact email is " + mailto);
@@ -134,7 +134,7 @@ public class ContactDetail {
 		
 		@Test
 		public void getRating() throws Exception {
-			String selector = ".p-rating";
+			String selector = ".detail-row.p-rating";
 			Assert.assertTrue(util.isVisible(selector));
 			String rating = driver.findElement(By.cssSelector(selector)).getAttribute("data-rating");
 			log4j.info("Company Rating is " + rating);
@@ -143,7 +143,7 @@ public class ContactDetail {
 		
 		@Test
 		public void getSource() throws Exception {
-			String selector = ".p-source";
+			String selector = ".detail-row.p-source";
 			Assert.assertTrue(util.isVisible(selector));
 			selector = ".p-source .detail-row-value";
 			String source = driver.findElement(By.cssSelector(selector)).getAttribute("title");
@@ -152,7 +152,7 @@ public class ContactDetail {
 		}
 		@Test
 		public void getStatus() throws Exception {
-			String selector = ".p-status";
+			String selector = ".detail-row.p-status";
 			Assert.assertTrue(util.isVisible(selector));
 			selector = ".p-status .detail-row-value";
 			String status = driver.findElement(By.cssSelector(selector)).getAttribute("title");
@@ -163,7 +163,7 @@ public class ContactDetail {
 		
 		@Test
 		public void getTags() throws Exception {
-			String selector = ".p-tags";
+			String selector = ".detail-row.p-tags";
 			Assert.assertTrue(util.isVisible(selector));
 			selector = ".p-tags .detail-row-value";
 			String tags = driver.findElement(By.cssSelector(selector)).getText();
@@ -174,7 +174,7 @@ public class ContactDetail {
 		
 		@Test
 		public void getType() throws Exception {
-			String selector = ".p-type";
+			String selector = ".detail-row.p-type";
 			Assert.assertTrue(util.isVisible(selector));
 			selector = ".p-type .detail-row-value";
 			String type = driver.findElement(By.cssSelector(selector)).getAttribute("title");
