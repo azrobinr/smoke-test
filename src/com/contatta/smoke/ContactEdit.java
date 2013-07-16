@@ -34,6 +34,13 @@ public class ContactEdit {
 	
 	static String name = "";
 	static String pageTitle = "";
+	static String status = "new";
+	
+	static String address = "1060 W Addison";
+	static String city = "Chicago";
+	static String state = "IL";
+	static String zip = "60613";
+	static String country = "USA";
 	
 	static int z = 5;
 	static int maxGridLoopCount = 5;
@@ -116,7 +123,73 @@ public class ContactEdit {
 			Assert.assertTrue(util.isVisible(selector));	
 			driver.findElement(By.cssSelector(selector)).click();
 			util.snooze(z);
+			selector = ".combined-left .edit-save";
+			Assert.assertTrue(util.isVisible(selector));	
+			driver.findElement(By.cssSelector(selector)).click();
+			util.snooze(z);
+					
+		}
+		
+		@Test
+		public void setAddress() throws Exception {
+			//address
 			
+			String selector = ".address-collection .collection-add-button";
+			
+			driver.findElement(By.cssSelector(selector)).click();
+			util.snooze(z);
+			selector = ".address-collection .textarea-field-input";
+			
+			//when writing this section, I was getting two textarea-field-input matches
+			//and now I'm not.  So, now we just clear and fill it directly
+			
+			//List<WebElement> addressFields = util.getElementList(selector);
+			//element = addressFields.get(2);
+			element = driver.findElement(By.cssSelector(selector));
+			element.clear();
+			element.sendKeys(address);
+			util.snooze(z);
+			selector = ".address-collection .text-field-input";
+			List<WebElement> addressFields2 = util.getElementList(selector);
+			element = addressFields2.get(0);
+			element.clear();
+			element.sendKeys(city);
+			util.snooze(z);
+			element = addressFields2.get(1);
+			element.clear();
+			element.sendKeys(state);
+			util.snooze(z);
+			element = addressFields2.get(2);
+			element.clear();
+			element.sendKeys(zip);
+			util.snooze(z);
+			element = addressFields2.get(3);
+			element.clear();
+			element.sendKeys(country);
+			util.snooze(z);
+			selector = ".combined-left .edit-save";
+			Assert.assertTrue(util.isVisible(selector));	
+			driver.findElement(By.cssSelector(selector)).click();
+			util.snooze(z);
+		    					
+		}
+		
+		@Test
+		public void setStatus() throws Exception {
+			// status  remember to change to .p-status .select-input?
+		
+		    String selector = ".extra-section .edit-row:nth-child(1) .select-input";
+			Assert.assertTrue(util.isVisible(selector));	
+		    element = driver.findElement(By.cssSelector(selector));
+		    element.click();
+		    util.snooze(z);
+		    element = driver.findElement(By.cssSelector(".select-item[data-id='contact.status." + status + "']"));
+		    element.click();
+		    util.snooze(z);
+		    selector = ".combined-left .edit-save";
+			Assert.assertTrue(util.isVisible(selector));	
+			driver.findElement(By.cssSelector(selector)).click();
+			util.snooze(z);
 		}
 		
 		@After
