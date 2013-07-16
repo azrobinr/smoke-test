@@ -10,3 +10,4 @@ java -cp $mypath $runner com.contatta.smoke.CompanyDetail
 java -cp $mypath $runner com.contatta.smoke.ContactDetail
 java -cp $mypath $runner com.contatta.smoke.ComposeEmail
 java -cp $mypath $runner com.contatta.smoke.CompanyEdit
+java -cp $mypath $runner com.contatta.smoke.ContactEdit
