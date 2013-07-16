@@ -105,7 +105,7 @@ public class CompanyDetail {
 			iterator.next().click();
 			util.snooze(z);
 			//get the company name
-		    element = driver.findElement(By.cssSelector(".p-name"));
+		    element = driver.findElement(By.cssSelector(".detail-header-title.p-name"));
 		    name = element.getText();
 			pageTitle = driver.getTitle();
 			log4j.info("just clicked " + name + " from list view, the page title is " + pageTitle);
@@ -114,7 +114,7 @@ public class CompanyDetail {
 		
 		@Test
 		public void getLink() throws Exception {
-			String selector = ".p-url";
+			String selector = ".detail-header .p-url";
 			Assert.assertTrue(util.isVisible(selector));
 			String url = driver.findElement(By.cssSelector(selector)).getText();
 			log4j.info("Company URL is " + url);
@@ -123,7 +123,7 @@ public class CompanyDetail {
 		
 		@Test
 		public void getPhoneNum() throws Exception {
-			String selector = ".p-phone";
+			String selector = ".p-phones .p-phone";
 			Assert.assertTrue(util.isVisible(selector));
 			String num = driver.findElement(By.cssSelector(selector)).getText();
 			log4j.info("Company phone number  is " + num);
@@ -133,7 +133,7 @@ public class CompanyDetail {
 		
 		@Test
 		public void getRating() throws Exception {
-			String selector = ".p-rating";
+			String selector = ".p-rating .p-rating";
 			Assert.assertTrue(util.isVisible(selector));
 			String rating = driver.findElement(By.cssSelector(selector)).getAttribute("data-rating");
 			log4j.info("Company Rating is " + rating);
@@ -142,7 +142,7 @@ public class CompanyDetail {
 		
 		@Test
 		public void getSource() throws Exception {
-			String selector = ".p-source";
+			String selector = ".detail-row.p-source";
 			Assert.assertTrue(util.isVisible(selector));
 			selector = ".p-source .detail-row-value";
 			String source = driver.findElement(By.cssSelector(selector)).getAttribute("title");
@@ -151,7 +151,7 @@ public class CompanyDetail {
 		}
 		@Test
 		public void getStatus() throws Exception {
-			String selector = ".p-status";
+			String selector = ".detail-row.p-status";
 			Assert.assertTrue(util.isVisible(selector));
 			selector = ".p-status .detail-row-value";
 			String status = driver.findElement(By.cssSelector(selector)).getAttribute("title");
@@ -162,7 +162,7 @@ public class CompanyDetail {
 		
 		@Test
 		public void getTags() throws Exception {
-			String selector = ".p-tags";
+			String selector = ".detail-row.p-tags";
 			Assert.assertTrue(util.isVisible(selector));
 			selector = ".p-tags .detail-row-value";
 			String tags = driver.findElement(By.cssSelector(selector)).getText();
@@ -173,7 +173,7 @@ public class CompanyDetail {
 		
 		@Test
 		public void getType() throws Exception {
-			String selector = ".p-type";
+			String selector = ".detail-row.p-type";
 			Assert.assertTrue(util.isVisible(selector));
 			selector = ".p-type .detail-row-value";
 			String type = driver.findElement(By.cssSelector(selector)).getAttribute("title");
