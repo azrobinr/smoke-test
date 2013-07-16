@@ -85,6 +85,36 @@ public class TestUtil {
 		this.snooze(z);
 		
 	}
+	
+	void clickFirstElementIfExists(String selector){
+		List<WebElement> elements = null;
+		Iterator<WebElement> iterator = null;
+		log4j.info("we're in clickFirstElementIfExists, processing " + selector);
+		snooze(z);
+		try{
+			elements = driver.findElements(By.cssSelector(selector));
+			int size = elements.size();
+			log4j.info("looks like there are " 
+					+ size 
+					+ " elements in the " 
+					+ selector 
+					+ " iterator");
+			if(size>0){
+				iterator = elements.iterator();
+				iterator.next().click();
+			}
+		}
+		
+		catch (NoSuchElementException e) {
+			log4j.error("didn't find " + selector);
+		}
+		catch(ElementNotVisibleException e){
+    		log4j.error(selector + " is not Visible?");
+    		log4j.error("...this exception was caught in TestUtil.");
+    	}
+		
+		return;
+	}
 
 	String getAttribute(String selector, String name){
 		log4j.info("clicking " + selector);

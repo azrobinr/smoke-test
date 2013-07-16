@@ -2,6 +2,7 @@ package com.contatta.smoke;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import com.contatta.smoke.Config;
 import com.contatta.smoke.TestUtil;
@@ -39,10 +40,17 @@ public class AddContact {
 		static String phoneType = "mobile";
 		static String phone = "666-555-4444";
 		static String company = "ACME Labs";
-		static String title = "Recon";
+		static String jobTitle = "Recon";
+		static String address = "1060 W Addison";
+		static String city = "Chicago";
+		static String state = "IL";
+		static String zip = "60613";
+		static String country = "USA";
+		static String source = "referral";
 		static String status = "new";
 		static String type = "prospect";
 		static String tag = "VIP";
+		static String twitter = "@tweetywheety";
 		
 		
 		static TestUtil util;
@@ -160,9 +168,61 @@ public class AddContact {
 		    selector = ".p-position .text-field-input";
 			Assert.assertTrue(util.isVisible(selector));	
 		    driver.findElement(By.cssSelector(selector)).click();
-		    driver.findElement(By.cssSelector(selector)).sendKeys(title);
+		    driver.findElement(By.cssSelector(selector)).sendKeys(jobTitle);
 		    driver.findElement(By.cssSelector(selector)).sendKeys(Keys.RETURN);
 		    util.snooze(z);
+		    
+		    //address
+	
+			selector = ".address-collection .collection-add-button";
+			
+			driver.findElement(By.cssSelector(selector)).click();
+			util.snooze(z);
+			selector = ".address-collection .textarea-field-input";
+			
+			//when writing this section, I was getting two textarea-field-input matches
+			//and now I'm not.  So, now we just clear and fill it directly
+			
+			//List<WebElement> addressFields = util.getElementList(selector);
+			//element = addressFields.get(2);
+			element = driver.findElement(By.cssSelector(selector));
+			element.clear();
+			element.sendKeys(address);
+			util.snooze(z);
+			selector = ".address-collection .text-field-input";
+			List<WebElement> addressFields2 = util.getElementList(selector);
+			element = addressFields2.get(0);
+			element.clear();
+			element.sendKeys(city);
+			util.snooze(z);
+			element = addressFields2.get(1);
+			element.clear();
+			element.sendKeys(state);
+			util.snooze(z);
+			element = addressFields2.get(2);
+			element.clear();
+			element.sendKeys(zip);
+			util.snooze(z);
+			element = addressFields2.get(3);
+			element.clear();
+			element.sendKeys(country);
+			util.snooze(z);
+		    
+		   
+		    // twitter
+			
+		    selector = ".social-collection .text-field-input";
+			List<WebElement> socialFields = util.getElementList(selector);
+			element = socialFields.get(1);
+			element.clear();
+			element.sendKeys(twitter);
+			util.snooze(z);
+		    
+			//if there are social suggestions, use the first one
+			
+			util.click(".social-connection-bar-text");
+			util.clickFirstElementIfExists(".social-connection-use-this");
+			
 						
 			// status  remember to change to .p-status .select-input?
 			
@@ -172,7 +232,6 @@ public class AddContact {
 		    util.snooze(z);
 		    driver.findElement(By.cssSelector(".select-item[data-id='contact.status." + status + "']")).click();
 		    util.snooze(z);
-		    
 		    
 		    //type - consider using  .extra-section .p-type .select-input
 		    
@@ -190,6 +249,17 @@ public class AddContact {
 			driver.findElement(By.cssSelector(selector)).sendKeys(tag);
 			util.snooze(z);
 			
+			//source
+			
+			selector = ".extra-section .edit-row:nth-child(4) .select-input";
+			Assert.assertTrue(util.isVisible(selector));	
+		    driver.findElement(By.cssSelector(selector)).click();
+			util.snooze(z);
+			selector = ".select-item[data-id='contact.source." + source + "']";
+			Assert.assertTrue(util.isVisible(selector));
+			driver.findElement(By.cssSelector(selector)).click();
+			util.snooze(z);
+		    		   
 			
 			//stars
 			
@@ -198,14 +268,7 @@ public class AddContact {
 			driver.findElement(By.cssSelector(selector)).click();
 			util.snooze(z);
 			
-			//bookmark
-			
-			selector = ".bookmark-toggle";
-			Assert.assertTrue(util.isVisible(selector));	
-			driver.findElement(By.cssSelector(selector)).click();
-			util.snooze(z);
-			
-			// note (need an array)
+			//bookmark - stubbed out, it's not on the add view
 			/*
 			selector = ".bookmark-toggle";
 			Assert.assertTrue(util.isVisible(selector));	
